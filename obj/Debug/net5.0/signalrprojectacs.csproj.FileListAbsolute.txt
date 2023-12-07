@@ -1,0 +1,8 @@
+C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net5.0\signalrprojectacs.csproj.AssemblyReference.cache
+C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net5.0\signalrprojectacs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net5.0\signalrprojectacs.AssemblyInfoInputs.cache
+C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net5.0\signalrprojectacs.AssemblyInfo.cs
+C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net5.0\signalrprojectacs.csproj.CoreCompileInputs.cache
+C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net5.0\signalrprojectacs.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net5.0\signalrprojectacs.RazorAssemblyInfo.cache
+C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net5.0\signalrprojectacs.RazorAssemblyInfo.cs
