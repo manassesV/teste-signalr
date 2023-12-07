@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gtptnFJkiSgK8s6KrHOZzQIhIEL/ywen9MJwkNCj738/1fG9rjNFDmxrbq71IRSMJyj2U/mzS3l8g9Le10A2qw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\manasses.vitorino\\source\\repos\\signalrprojectacs\\signalrprojectacs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\manasses.vitorino\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512"
+  ],
+  "logs": []
+}
