@@ -1,18 +1,27 @@
 ﻿version: 0.2
-phases:   
-  install:
-    commands:
-      - /usr/local/bin/dotnet-install.sh --channel LTS
+
+phases:
   pre_build:
     commands:
-      - echo Restore started on `date`
-      - dotnet restore signalrprojectacs.csproj  
+      - echo Logging in to Amazon ECR...
+      - aws --version
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 115084379948.dkr.ecr.us-east-1.amazonaws.com
+      - REPOSITORY_URI=115084379948.dkr.ecr.us-east-1.amazonaws.com/ecr-service-signalr:latest
+      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+      - IMAGE_TAG=${COMMIT_HASH:=latest}
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c release -o ./build_output signalrprojectacs.csproj
+      - echo Building the Docker image...
+      - docker build -t $REPOSITORY_URI:latest .
+      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker images...
+      - docker push $REPOSITORY_URI:latest
+      - docker push $REPOSITORY_URI:$IMAGE_TAG
+      - echo Writing image definitions file...
+      - printf '[{"name":"ecr-service-signalr:latest","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 artifacts:
-  files:
-     - build_output/**/*
-     - deploy-scripts/**/*
-     - appspec.yml
+    files: imagedefinitions.json
