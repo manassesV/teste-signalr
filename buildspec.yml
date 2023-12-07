@@ -1,12 +1,12 @@
 ﻿version: 0.2
-phases:
+phases:   
   install:
     commands:
       - /usr/local/bin/dotnet-install.sh --channel LTS
   pre_build:
     commands:
       - echo Restore started on `date`
-      - dotnet restore signalrprojectacs.csproj
+      - dotnet restore signalrprojectacs.csproj 
   build:
     commands:
       - echo Build started on `date`
