@@ -5,7 +5,7 @@ phases:
     commands:
       - echo Logging in to DockerHub...
       - docker login -u manasses654 -p 1995@Mana
-      - REPOSITORY_URI=115084379948.dkr.ecr.us-east-1.amazonaws.com/ecr-service-signalr
+      - REPOSITORY_URI=115084379948.dkr.ecr.us-east-1.amazonaws.com/pipelineteste
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=${COMMIT_HASH:=latest}
   build:
