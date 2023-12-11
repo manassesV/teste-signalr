@@ -25,7 +25,7 @@ namespace signalrprojectacs
                 await logger.LogMessageAsync($"OnDisconnectedAsync {Context.ConnectionId}");
 
 
-            }
+            } 
             public async Task SendMessage(string user, string message)
             {
 
