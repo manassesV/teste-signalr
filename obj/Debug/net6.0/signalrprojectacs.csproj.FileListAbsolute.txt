@@ -6,6 +6,9 @@ C:\Users\manasses.vitorino\source\repos\signalrprojectacs\bin\Debug\net6.0\signa
 C:\Users\manasses.vitorino\source\repos\signalrprojectacs\bin\Debug\net6.0\signalrprojectacs.runtimeconfig.json
 C:\Users\manasses.vitorino\source\repos\signalrprojectacs\bin\Debug\net6.0\signalrprojectacs.dll
 C:\Users\manasses.vitorino\source\repos\signalrprojectacs\bin\Debug\net6.0\signalrprojectacs.pdb
+C:\Users\manasses.vitorino\source\repos\signalrprojectacs\bin\Debug\net6.0\AWSSDK.CloudWatchLogs.dll
+C:\Users\manasses.vitorino\source\repos\signalrprojectacs\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Users\manasses.vitorino\source\repos\signalrprojectacs\bin\Debug\net6.0\Serilog.dll
 C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net6.0\signalrprojectacs.csproj.AssemblyReference.cache
 C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net6.0\signalrprojectacs.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net6.0\signalrprojectacs.AssemblyInfoInputs.cache
@@ -24,6 +27,7 @@ C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net6.0\stati
 C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net6.0\scopedcss\bundle\signalrprojectacs.styles.css
 C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net6.0\scopedcss\projectbundle\signalrprojectacs.bundle.scp.css
+C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net6.0\signalrprojectacs.csproj.CopyComplete
 C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net6.0\signalrprojectacs.dll
 C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net6.0\refint\signalrprojectacs.dll
 C:\Users\manasses.vitorino\source\repos\signalrprojectacs\obj\Debug\net6.0\signalrprojectacs.pdb

@@ -8,13 +8,42 @@
     ".NETCoreApp,Version=v6.0": {
       "signalrprojectacs/1.0.0": {
         "dependencies": {
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.2"
+          "AWSSDK.CloudWatchLogs": "3.7.301.8",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.2",
+          "Serilog": "3.1.1"
         },
         "runtime": {
           "signalrprojectacs.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.2": {}
+      "AWSSDK.CloudWatchLogs/3.7.301.8": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.300.16"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.CloudWatchLogs.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.301.8"
+          }
+        }
+      },
+      "AWSSDK.Core/3.7.300.16": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.300.16"
+          }
+        }
+      },
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.2": {},
+      "Serilog/3.1.1": {
+        "runtime": {
+          "lib/net6.0/Serilog.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -23,12 +52,33 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AWSSDK.CloudWatchLogs/3.7.301.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0oLmz+dC2zpjfapbY5NYdTxfWMlB/HIn9lqH5UaaNQEoT3msqxL3XiKetQyJ2tya+w99BFIwwEipsfdlhoy2jA==",
+      "path": "awssdk.cloudwatchlogs/3.7.301.8",
+      "hashPath": "awssdk.cloudwatchlogs.3.7.301.8.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.300.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VkZQ+28krl3lDjcaBpc841E/c2MOAqsNZtzc4MymXx7nV94usBqAhc0xXtXfHFvM8JXX8Jxs30GCk28dWolJmg==",
+      "path": "awssdk.core/3.7.300.16",
+      "hashPath": "awssdk.core.3.7.300.16.nupkg.sha512"
+    },
     "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.2": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-5daNXm8Hb016oETmuHXiW8jclmRR9CzM7XrOh2htYhQ/7AAYtqntZ1MrZkh09+JTtdjYdGsy2XIMPe9cg83x5w==",
       "path": "microsoft.visualstudio.azure.containers.tools.targets/1.17.2",
       "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512"
+    },
+    "Serilog/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P6G4/4Kt9bT635bhuwdXlJ2SCqqn2nhh4gqFqQueCOr9bK/e7W9ll/IoX1Ter948cV2Z/5+5v8pAfJYUISY03A==",
+      "path": "serilog/3.1.1",
+      "hashPath": "serilog.3.1.1.nupkg.sha512"
     }
   }
 }

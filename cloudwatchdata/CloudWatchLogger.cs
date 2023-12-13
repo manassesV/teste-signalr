@@ -1,5 +1,7 @@
-﻿using Amazon.CloudWatchLogs;
+﻿using Amazon;
+using Amazon.CloudWatchLogs;
 using Amazon.CloudWatchLogs.Model;
+using Serilog;
 
 namespace signalrprojectacs.cloudwatchdata
 {
@@ -16,8 +18,8 @@ namespace signalrprojectacs.cloudwatchdata
             // If don't have an AWS Profile on your machine and application is hosted outside
             // of AWS infrastructure (where IAM roles cannot be assigned to infrastructure),
             // rather use:
-            // _client = new AmazonCloudWatchLogsClient(awsAccessKeyId, awsSecretAccessKey, RegionEndpoint.AFSouth1);
-            _client = new AmazonCloudWatchLogsClient();
+            _client = new AmazonCloudWatchLogsClient("AKIAXGHM5A53THE2AADU", "Qxf79CAn21KQzpVfpogziTh6pPcUdXUetb3YJwev", RegionEndpoint.USEast1);
+            //_client = new AmazonCloudWatchLogsClient();
             _logGroup = logGroup;
         }
 
@@ -34,12 +36,24 @@ namespace signalrprojectacs.cloudwatchdata
 
         public static async Task<CloudWatchLogger> GetLoggerAsync(string logGroup)
         {
-            var logger = new CloudWatchLogger(logGroup);
+            try
+            {
+                var logger = new CloudWatchLogger(logGroup);
 
-            // Create a log group for our logger
-            await logger.CreateLogGroupAsync();
+                // Create a log group for our logger
+                await logger.CreateLogGroupAsync();
 
-            return logger;
+
+                return logger;
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex.Message);
+            }
+
+            return null;
+         
+
         }
 
         private async Task CreateLogGroupAsync()
@@ -58,8 +72,8 @@ namespace signalrprojectacs.cloudwatchdata
         {
             var response = await _client.PutLogEventsAsync(new PutLogEventsRequest()
             {
-                LogGroupName = _logGroup,
-                LogStreamName = _logStream,
+                LogGroupName = "test/log/group",
+                LogStreamName = "teste",
                 SequenceToken = _nextSequenceToken,
                 LogEvents = new List<InputLogEvent>()
             {
